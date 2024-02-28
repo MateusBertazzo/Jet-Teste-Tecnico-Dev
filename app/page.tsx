@@ -56,8 +56,8 @@ export default function Home() {
               </td>
             </tr>
           ))}
-      </tbody>
-    </table>
-  </div>
+        </tbody>
+      </table>
+    </div>
   );
 }

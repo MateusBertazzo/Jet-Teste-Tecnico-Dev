@@ -3,7 +3,7 @@ import TableMobile from "./components/TableMobile";
 
 export default function Home() {
   return (
-    <div className="p-5 h-screen bg-gray-100">
+    <div className="flex justify-center items-center h-screen">
       <TableDesktop />
       <TableMobile />
     </div>

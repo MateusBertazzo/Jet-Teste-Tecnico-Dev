@@ -19,7 +19,7 @@ function TableMobile() {
                     <div className="flex flex-col">
                         <p
                             className="tex-black font-bold">
-                            {car.model}
+                            {car.model}&nbsp;
                             <span
                                 className="text-black font-bold">
                                 {car.year}

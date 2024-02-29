@@ -9,7 +9,7 @@ export default function TableDesktop() {
         <table className="w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
-              <th scope="col" className="w-80 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="w-80 px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase tracking-wider">
                 CAR
               </th>
               <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -21,7 +21,7 @@ export default function TableDesktop() {
               <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 RATING
               </th>
-              <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th scope="col" className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                 ACTIONS
               </th>
             </tr>
@@ -33,10 +33,10 @@ export default function TableDesktop() {
 
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="flex items-center">
-                    <div className="flex gap-1 items-center h-16 w-16">
-                      <Image src={car.img} alt={`Image of ${car.model}`} width={48} height={46} />
-                      <div className="text-sm font-medium text-gray-900">{car.model}</div>
-                      <div className="text-sm text-gray-500">{car.year}</div>
+                    <div className="relative flex gap-1 items-center h-16 w-16">
+                      <Image src={car.img} alt={`Image of ${car.model}`} width={85} height={85} />
+                      <p className="text-sm font-medium text-black">{car.model}</p>
+                      <p className="text-sm font-medium text-black">{car.year}</p>
                     </div>
                   </div>
                 </td>
@@ -57,8 +57,10 @@ export default function TableDesktop() {
                   )}
                 </td>
 
-                <td className="flex items-center px-6 py-10 whitespace-nowrap text-sm font-medium">
-                  <button className="items-center text-black hover:text-indigo-900"><HiDotsVertical /></button>
+                <td className="flex justify-center items-center px-6 py-10 whitespace-nowrap text-sm font-medium">
+                  <button className="flex text-black hover:text-indigo-900">
+                    <HiDotsVertical size={24} className='self-center'/>
+                  </button>
                 </td>
               </tr>
             ))}
